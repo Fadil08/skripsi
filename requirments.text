@@ -1,0 +1,2 @@
+pip install numpy scipy librosa soundfile torch torchvision torchaudio timm scikit-learn
+pip i
