@@ -318,7 +318,7 @@ if __name__ == "__main__":
 
     splits = {
         # "90_10": 0.10,
-        "80_20": 0.20,
+        # "80_20": 0.20,
         # "70_30": 0.30,
     }
     augs = ["none", "gain"]
@@ -338,7 +338,7 @@ if __name__ == "__main__":
                 batch_size=default_batch,
                 num_workers=default_num_workers,
                 patience=2,
-                num_epochs=50,
+                num_epochs=3,
             )
             results.append((split_name, aug, metrics["acc"], metrics["f1_macro"], metrics["miou"]))
 
